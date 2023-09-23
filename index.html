@@ -10,17 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-     <main>
-
-
-
+     
 
     <nav id="desktop-nav">
       <div class="logo">d|c</div>
       <div>
         <ul class="nav-links">
+          <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -36,6 +33,7 @@
           <span></span>
         </div>
         <div class="menu-links">
+          <li><a href="#" onclick="toggleMenu()">Home</a></li>
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
@@ -53,30 +51,29 @@
           <button
             class="btn"
             onclick="window.open('./assets/DavidCoto HernándezCV.pdf')">
-            Download CV
+            Resume 
           </button>
           <button class="btn" onclick="location.href='#contact'">
             Contact Info
           </button>
         </div>
         <div id="social-icons">
-          <a class="icons" href="https://www.linkedin.com/in/david-coto-hern%C3%A1ndez-3558bb249/"><i class="fab fa-linkedin"></i></a>
-          <a class="icons" href="https://github.com/dcoto"><i class="fab fa-github"></i></a>
-
+          <a class="icons" target="_blank" href="https://www.linkedin.com/in/david-coto-hern%C3%A1ndez-3558bb249/"><i class="fab fa-linkedin"></i></a>
+          <a class="icons" target="_blank" href="https://github.com/dcoto"><i class="fab fa-github"></i></a>
         </div>
 
       </div>
       
       <nav class="nav-arrows">
-       
+        
             <li><a href="#about"><i class="fa-solid fa-angles-down"></i></a></li>
           
       </nav>
          
     </section>
-   </main>
+   
 
-    <section id="about">
+    <section id="about" class="reveal">
       <p class="section__text__p1">Few things</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
@@ -88,10 +85,10 @@
             
             <div class="details-container">
               <i class="fa-solid fa-user-graduate"></i>
-              <h3>I’m currently working on</h3>
-              <p>
-                my project to finish my <span>Systems Engineering </span>major and graduate . <br>I love writing <span>code</span> but more the <span>data</span>, currently learning about <span>Data-Analysis</span> <br> such as advanced <span>Excel</span>, 
-                <span>Tableau </span>and <span>SQL</span>, also love to design <span>Websites.</span> 
+              <h3>I’m currently studying</h3>
+              <p class="about-text">
+                to become an <span>IT administrador</span> on M365 services and my last courses to finish my<span>Systems Engineering</span> major. <br>Love writing <span>code</span> but more the <span>data</span>, interested on <span>Data-Analysis</span> <br> such as advanced <span>Excel</span>, 
+                <span>Tableau </span>and <span>SQL</span>.
               </p>
             </div>
           </div>
@@ -102,177 +99,18 @@
       </div>
 
      
-           <! arrow to move if i want to add it later >
+           
     </section>
-    <section id="experience">
-      <p class="section__text__p1">Where i worked</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">titulo</h2>
-            <div class="article-container">
-              <article>
-                
-                <div>
-                  <h3><i class="fa-brands fa-html5"></i></h3>
-                  
-                </div>
-              </article>
-              <article>
-                
-                <div>
-                  <h3><i class="fa-brands fa-html5"></i></h3>
-                  
-                </div>
-              </article>
-              <article>
-              
-                <div>
-                  <h3><i class="fa-brands fa-html5"></i></h3>
-                 
-                </div>
-              </article>
-              <article>
-                
-                <div>
-                  <h3><i class="fa-brands fa-html5"></i></h3>
-                 
-                </div>
-              </article>
-              <article>
-                
-                <div>
-                  <h3><i class="fa-brands fa-html5"></i></h3>
-                 
-                </div>
-              </article>
-              <article>
-                
-                <div>
-                  <h3><i class="fa-brands fa-html5"></i></h3>
-                 
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">titulo</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                 
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!– arrow to move if i want to add it later –>
-      
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
+    
+   
+    <section id="projects" class="reveal">
+      <p class="section__text__p1">Soon ....</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/mario.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Coffee Orders</h2>
-            <div class="btn-container">
-             
-              <button
-                class="btn"
-                onclick="window.open('./assets/coffeeOrdersProject.xlsx')"
-              >
-                Download
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/luigi.png"
-                alt="Project 2"
-                class="project-img"
-
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Tic-Tac-Toe</h2>
-            <div class="btn-container">
-              
-              <button
-                class="btn"
-                onclick="location.href=''"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/yoshi.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Harry Potter API</h2>
-            <div class="btn-container">
-            
-              <button
-                class="btn"
-                onclick="location.href=''"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
+          
+        
+       
          
           <div class="details-container color-container">
             <div class="article-container">
@@ -282,14 +120,14 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">To do list</h2>
+            <h2 class="experience-sub-title project-title">To-Do List App</h2>
             <div class="btn-container">
             
               <button
                 class="btn"
-                onclick="location.href=''"
+                onclick="window.open('https://dcoto.github.io/To-do_ListApp/')"
               >
-                Live Demo
+                 Demo
               </button>
             </div>
           </div>
@@ -299,7 +137,7 @@
     
 
     </section>
-    <section id="contact">
+    <section id="contact" class="reveal">
       <p class="section__text__p1">Now what?</p>
       <h1 class="title">Get in Touch</h1>
       <div class="contact-info-upper-container">
@@ -314,18 +152,21 @@
         
       </div>  
       <div id="btn-contact">
-        <button class="btn" onclick="location.href='https://mail.google.com/mail/?view=cm&fs=1&to=dcotoh.14@gmail.com&su=Contact'">Send me a message</button>
+        <button class="btn" onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=dcotoh.14@gmail.com&su=Contact')">Send me an email</button>
+        
       </div>
+
       
     </section>
 
     
     <footer>
-      <nav class="nav-arrows">
-       
-        <li><a href="#"><i class="fa-solid fa-angles-up"></i></a></li>
+      <nav class="nav-arrows">    
+        <li><a href="#"><i class="fa-brands fa-space-awesome"></i></a></li>
+      </nav>
+     
       
-  </nav>
+      
       
     </footer>
     <script src="script.js"></script>

@@ -5,62 +5,46 @@
 * {
   margin: 0;
   padding: 0;
-
-  /*If i want to add social icons on main page 
-
-          <a class="icons" href="https://www.linkedin.com/in/david-coto-hern%C3%A1ndez-3558bb249/"><i class="fab fa-linkedin"></i></a>
-          <a class="icons" href="https://github.com/dcoto"><i class="fab fa-github"></i></a>
-  */
-
 }
 
 body {
   font-family: "Poppins", sans-serif;
   /*background: #06152A;*/
-  background: #0a192f;
-/*background: linear-gradient(245.59deg, #0a192f 50%, #0a192f 50%, #64ffda 50%)*/
+  background-color: rgb(15, 23, 42);
+  /*background: linear-gradient(245.59deg, #0a192f 50%, #0a192f 50%, #64ffda 50%)*/
   /*background: linear-gradient(245.59deg, red 0%, #000 28.53%, #fff 75.52%);*/
   color: #fff;
 }
-
 
 html {
   scroll-behavior: smooth;
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: #8892b0;
 }
 
-/* TRANSITION */
-
-a,
-.btn {
-  transition: all 300ms ease;
-}
-
-/* DESKTOP NAV */
-
-nav,
-.nav-links {
+/****************************** nav-header ******************************/
+nav, .nav-links {
   display: flex;
 }
 
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  padding-top: 40px;
 }
 
+
 .nav-links {
-  gap: 2rem;
+  gap: 1.5rem;
   list-style: none;
-  font-size: 1.5rem;
+  /*font-size: 1.5rem;*/
 }
 
 nav ul li a {
- text-decoration: none;
-  font-size: 18px;
+  text-decoration: none;
+  font-size: 15px;
   --b: 0.1em;   /* the thickness of the line */
   --c: #64ffda; /* the color */
   color: #fff;
@@ -70,6 +54,7 @@ nav ul li a {
   -webkit-background-clip: text,padding-box;
   background-clip: text,padding-box;
   transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+  
 }
 
 nav ul li a:hover {
@@ -78,7 +63,9 @@ nav ul li a:hover {
   color: #64ffda;
   
 }
+/****************************** nav-header ******************************/
 
+/****************************** Arrows to nav top-mid-bottom ******************************/
 .nav-arrows{
   display: flex;
   justify-content: center;
@@ -86,7 +73,8 @@ nav ul li a:hover {
   font-size: 50px;
   text-decoration: none;
   list-style: none;
-  height: 25vh;
+  height: 32vh;
+  padding-top: 90px;
   
 }
 .nav-arrows li a i{
@@ -98,7 +86,9 @@ nav ul li a:hover {
 .nav-arrows li a i:hover{
   transform: scale(1.3);
 }
+/****************************** Arrows to nav top-mid-bottom ******************************/
 
+/****************************** logo d|c ******************************/
 .logo {
   font-size: 2rem;
   color: #64ffda;
@@ -110,8 +100,9 @@ nav ul li a:hover {
 .logo:hover {
   transform: scale(1.3);
 }
+/****************************** logo d|c ******************************/
 
-/* HAMBURGER MENU */
+/****************************** HAMBURGER MENU ******************************/
 
 #hamburger-nav {
   display: none;
@@ -190,28 +181,29 @@ nav ul li a:hover {
 .hamburger-icon span:first-child {
   transform: none;
 }
+/****************************** HAMBURGER MENU ******************************/
 
-/* SECTIONS */
-
+/****************************** Sections ******************************/
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
+  margin: 0 20rem;
   box-sizing: border-box;
   min-height: fit-content;
+  /*background-color: red;*/
 }
 
 .section-container {
   display: flex;
+ /*background-color: green;*/
 }
 
-/* PROFILE SECTION */
-
+/****************************** Profile section ******************************/
 #profile {
-  margin-top: 180px;
-  justify-content: center;
-  gap: 5rem;
+  margin-top: 80px;
   height: 80vh;
+  /*background-color: beige;*/
+ 
  
 }
 #profile span{
@@ -223,28 +215,24 @@ section {
 }
 
 
-/*if i want to add a picture*/
+/****************************** If i want to add a picture*****************************/
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
   opacity: 0.7;
   transition: .6s;
 }
 
 .section__pic-container:hover{
   box-shadow:
-1px 1px #64ffda,
-2px 2px #64ffda,
-3px 3px #64ffda,
-4px 4px #64ffda,
-5px 5px #64ffda,
-6px 6px #64ffda;
--webkit-transform: translateX(-3px);
-transform: translateX(-3px);
-transition: .5s ease;
-
+  1px 1px #64ffda,
+  2px 2px #64ffda,
+  3px 3px #64ffda,
+  4px 4px #64ffda,
+  5px 5px #64ffda,  
+  6px 6px #64ffda;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  transition: .5s ease;
   opacity: 1;
 }
 
@@ -256,11 +244,11 @@ transition: .5s ease;
 .section__text p {
   font-weight: 600;
   color: #8892b0;
-
 }
 
 .section__text__p1 {
   text-align: center;
+  
 }
 
 .section__text__p2 {
@@ -269,9 +257,8 @@ transition: .5s ease;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 60px;
   text-align: center;
-
 }
 
 #social-icons{
@@ -317,10 +304,9 @@ transition: .5s ease;
   padding: 1rem 1.5rem;
   border-radius: 5px;
   cursor: pointer;
-  transition:1s;
-  display: flex
+  transition:0.5s;
+  
 }
-
 
 .btn:hover{
 
@@ -328,8 +314,6 @@ transition: .5s ease;
   color: #081b29;
   
   }
-
-
 
 .btn-container {
   gap: 1rem;
@@ -339,6 +323,7 @@ transition: .5s ease;
 
 #about {
   position: relative;
+  /*background-color: purple;*/
 
 }
 #about .title{
@@ -349,6 +334,7 @@ transition: .5s ease;
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  
 }
 
 .about-details-container {
@@ -362,10 +348,14 @@ transition: .5s ease;
   display: flex;
 
 }
+.about-text{
+  color: #8892b0;
+}
 
 .about-details-container p span{
   color: #64ffda;
 }
+
 
 .arrow {
   font-size: 50px;
@@ -377,10 +367,13 @@ transition: .5s ease;
 /*cards*/
 .details-container {
   padding: 1.5rem;
+  flex: 1;
   background: #0a192f;
   border-radius: 1rem;
   transition: .3s;
   opacity: 0.9;
+  text-align: center;
+  
 }
 
 .section-container {
@@ -400,10 +393,6 @@ transition: .5s ease;
   cursor: pointer;
   color: #64ffda;
 }
-.details-container p:hover{
-
-  color: #fff;
-}
 
 .text-container p {
   color: #fff;
@@ -418,7 +407,7 @@ transition: .5s ease;
 
 #experience {
   position: relative;
-  padding-top: 180px;
+  padding-top: 70px;
 }
 
 #experience .title{
@@ -452,7 +441,7 @@ article {
   width: 10rem;
   justify-content: space-around;
   gap: 0.5rem;
-  color: #8892b0;;
+  color: #8892b0;
 }
 
 article .icon {
@@ -463,7 +452,7 @@ article .icon {
 
 #projects {
   position: relative;
-  padding-top: 180px;
+  padding-top: 70px;
 }
 
 #projects .title{
@@ -530,30 +519,18 @@ article .icon {
   color: #64ffda; /*verde agua*/
 }
 
-.contact-icon {
-  cursor: default;
-}
 
 .contact-icon{
-  text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
   color:#fff;
   display: inline-block;
-  transition: .3s;
+  cursor: default;
 
 }
 
-.email-icon {
-  height: 2.5rem;
-}
-
-#btn-contact{
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
-
+#contact, .section__text__p1 title{
+  text-align: center;
 }
 
 /* FOOTER SECTION */
@@ -561,15 +538,84 @@ article .icon {
 footer {
   height: 26vh;
   margin: 0 1rem;
-
-
-
 }
 
-footer p {
-  text-align: center;
+.rocket-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer nav ul li a{
-  font-size: 50px;
+
+
+.card {
+  width: 190px;
+  height: 254px;
+  background: #64ffda;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px  #64ffda;
+  font-size: 30px;
+  font-weight: 900;
+  opacity: 0.7;
 }
+
+.card:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px  #8892b0;
+  background: #8892b0;
+  opacity: initial;
+  filter: contrast(120%);
+}
+
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+}
+
+.card:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+}
+
+.card:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+
+
+.reveal{
+
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(120px);
+  opacity: 1;
+}
+
