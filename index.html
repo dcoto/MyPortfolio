@@ -10,13 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-     
 
     <nav id="desktop-nav">
       <div class="logo">d|c</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
+          
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -33,11 +32,10 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#" onclick="toggleMenu()">Home</a></li>
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          
         </div>
       </div>
     </nav>
@@ -45,8 +43,8 @@
     <section id="profile">
        <div class="section__text">
         <p class="section__text__p1"></p>
-        <h1 class="title"><span>David </span>Coto Hernandez</h1>
-        <p class="section__text__p2">System Engineer</p>
+        <h1 class="title"><span>David </span>Coto</h1>
+        <p class="section__text__p2">System Engineer Student</p>
         <div class="btn-container">
           <button
             class="btn"
@@ -64,7 +62,7 @@
 
       </div>
       
-      <nav class="nav-arrows">
+      <nav id="nav-about" class="nav-arrows">
         
             <li><a href="#about"><i class="fa-solid fa-angles-down"></i></a></li>
           
@@ -103,15 +101,14 @@
     </section>
     
    
+
+
     <section id="projects" class="reveal">
       <p class="section__text__p1">Soon ....</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          
-        
-       
-         
+
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -131,12 +128,34 @@
               </button>
             </div>
           </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/mario.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Data-Analyst Dashboard</h2>
+            <div class="btn-container">
+            
+              <button
+                class="btn"
+                onclick="window.open('https://dcoto.github.io/To-do_ListApp/')"
+              >
+                 Demo
+              </button>
+            </div>
+          </div>
+
         </div>
       </div>
        <!– arrow to move if i want to add it later –>
     
 
     </section>
+
     <section id="contact" class="reveal">
       <p class="section__text__p1">Now what?</p>
       <h1 class="title">Get in Touch</h1>
@@ -147,7 +166,7 @@
         </div>
         <div class="contact-info-container">
           <h1 class="contact-icon" href=""><i class="fa-solid fa-mobile-screen-button"></i></h1>
-          <p>6014-0660</p>
+          <p>+506 60140660</p>
         </div>
         
       </div>  
@@ -169,6 +188,6 @@
       
       
     </footer>
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
   </body>
 </html>

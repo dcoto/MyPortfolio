@@ -50,15 +50,16 @@
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    margin-top: 65px;
   }
   #profile {
-    height: 83vh;
+    height: 60vh;
     margin-bottom: 0;
   }
   article {
     font-size: 1rem;
   }
+ 
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
@@ -99,5 +100,13 @@
   }
   .text-container {
     text-align: justify;
+  }
+  
+  #nav-about{
+    opacity: 0;
+  }
+
+  section{
+    height: 90vh;
   }
 }
