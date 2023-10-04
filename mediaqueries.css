@@ -13,6 +13,7 @@
 }
 
 @media screen and (max-width: 1200px) {
+
   #desktop-nav {
     display: none;
   }
@@ -27,15 +28,13 @@
   .section-container {
     display: block;
   }
-  .arrow {
-    display: none;
-  }
+ 
   section,
   .section-container {
     height: fit-content;
   }
   section {
-    margin: 0 5%;
+    margin: 0 8rem;
   }
   .section-pic-container {
     width: 275px;
@@ -45,6 +44,7 @@
   .about-containers {
     margin-top: 0;
   }
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -67,10 +67,10 @@
   .contact-info-container {
     margin: 0;
   }
-  .contact-info-container p,
+  /*.contact-info-container p,
   .nav-links li a {
     font-size: 1rem;
-  }
+  }*/
   .experience-sub-title {
     font-size: 1.25rem;
   }
@@ -99,5 +99,14 @@
   
   section{
     height: 90vh;
+    margin: 0 2rem;
+  }
+
+  aside{
+    visibility: hidden;
+  }
+
+  #social-icons{
+    display: inline-block;
   }
 }

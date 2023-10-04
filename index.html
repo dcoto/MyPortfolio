@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Portfolio Web</title>
+    <link rel = "icon" href = 
+    "assets/icon.png" 
+            type = "image/x-icon">
+
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
 
-    <main class="overflow-hidden">
+    <div class="overflow-hidden">
 
   <header id="Nav-bars" class="drop-in"> 
     <nav id="desktop-nav">
-      <div class="logo">d|c</div>
+      <a class="logo" href="#">d|c</a>
       <div>
         <ul class="nav-links">
           
@@ -28,7 +33,7 @@
   
     <!-- Menu on phone -->
     <nav id="hamburger-nav">
-      <div class="logo">d|c</div>
+      <a class="logo" href="#">d|c</a>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -43,10 +48,22 @@
       </div>
     </nav>
   </header>
+      <main> 
+    <aside class="aside-left">
+
+      <ul>
+        <li><a class="icons" target="_blank" href="https://www.linkedin.com/in/david-coto-hern%C3%A1ndez-3558bb249/"><i class="fab fa-linkedin"></i></a></li>
+        <li><a class="icons" target="_blank" href="https://github.com/dcoto"><i class="fab fa-github"></i></a> </li>
+       <!-- <li><a class="icons" target="_blank" href="https://codepen.io/moexmxci-the-animator"><i class="fa-brands fa-codepen"></i></a>-->
+        </li>
+      </ul>
+     
+    </aside>
 
     <!--Profile-->
   <div class="drop-in-2"> 
     <section id="profile">
+      <main id="hide">
        <div class="section-text">
         <p class="section-text-p1"></p>
         <h1 class="title"><span>David </span>Coto</h1>
@@ -55,22 +72,29 @@
           <button class="btn" onclick="window.open('./assets/David Coto Hernández CV.pdf')">Resume</button>
           <button class="btn" onclick="location.href='#contact'">Contact Info</button>
         </div>
-        <ul id="social-icons">
+ 
+        <div id="social-icons">
           <a class="icons" target="_blank" href="https://www.linkedin.com/in/david-coto-hern%C3%A1ndez-3558bb249/"><i class="fab fa-linkedin"></i></a>
           <a class="icons" target="_blank" href="https://github.com/dcoto"><i class="fab fa-github"></i></a>
-        </ul>
-
+        </div>
       </div>
-      
-      <div id="nav-about" class="nav-arrows arrow">
-            <a href="#about"><i class="fa-solid fa-angles-down"></i></a>  
+    </main>
+      <div id="nav-about" class="nav-arrows">
+        <p>Scroll Down</p>
+            <a href="#about"><i class="fa-solid fa-angles-down arrow"></i></a>  
       </div>
       
       
     </section>
   </div>
 
-   </main>
+  <aside class="aside-right">
+    
+  </aside>
+
+</main>
+
+</div>
 
    <!--About-->
 
@@ -106,39 +130,40 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/toad.png"
+                src="./assets/uno.png"
                 alt="Project 3"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">To-Do List<br> App</h2>
+            <h2 class="experience-sub-title project-title">To-Do List</h2>
             <div class="btn-container">
             
-              <button
+              <a
+              target="_blank"
                 class="btn"
-                onclick="window.open('https://dcoto.github.io/To-do_ListApp/')"
+                href="https://dcoto.github.io/To-do_ListApp/"
               >
                  Demo
-              </button>
+            </a>
             </div>
           </div>
 
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/mario.png"
+                src="./assets/dashboard.png"
                 alt="Project 3"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Data-Analyst<br> Dashboard</h2>
+            <h2 class="experience-sub-title project-title">Data-Analyst</h2>
             <div class="btn-container">
             
-              <button
-                class="btn" href="https://1drv.ms/x/s!AjcKlBryo_0GgWMFiTh-TO-xAx3l?e=K7g5xY"
+              <a
+               target="_blank" class="btn" href="https://1drv.ms/x/s!AjcKlBryo_0GgWMFiTh-TO-xAx3l?e=K7g5xY"
               >
                  Demo
-              </button>
+            </a>
             </div>
           </div>
 
@@ -169,9 +194,12 @@
 
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
+          <h1 class="contact-icon" href=""><i class="fa-solid fa-mobile-screen-button"></i></h1>
+
           <p>dcotoh.14@gmail.com</p>
         </div>
         <div class="contact-info-container">
+          <h1 href="" class="contact-icon"><i class="fa-solid fa-envelope"></i></h1>
           <p>+506 60140660</p>
         </div>
         
