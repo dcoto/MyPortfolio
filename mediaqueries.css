@@ -48,9 +48,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    margin-top:270px;
+  #contact{
     min-height: 100vh;
   }
   #profile {
@@ -61,10 +59,6 @@
     font-size: 1rem;
   }
  
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
@@ -103,10 +97,6 @@
     text-align: justify;
   }
   
-  #nav-about{
-    opacity: 0;
-  }
-
   section{
     height: 90vh;
   }
