@@ -613,8 +613,10 @@ article {
 }*/
 
 .contact-info-container p {
-  font-size: 25px;
-  color: #fff; /*verde agua*/
+  font-size: 20px;
+  color: #e6f1ff;
+  text-decoration: none;
+  list-style: none;
 }
 
 .contact-info-container{
