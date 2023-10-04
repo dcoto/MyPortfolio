@@ -109,4 +109,10 @@
   #social-icons{
     display: inline-block;
   }
+
+  #nav-about{
+    height: 50vh;
+
+  }
+  
 }
