@@ -476,7 +476,7 @@ aside ul li a i:hover{
   padding: 1.5rem;
   flex: 1;
   background: #0a192f;
-  border-radius: 1rem;
+  border-radius: 2rem;
   transition: .3s;
 
   text-align: center;
@@ -495,6 +495,7 @@ aside ul li a i:hover{
 /*project card*/
 .details-container:hover{
   filter: contrast(120%);
+  transform: scale(1.1);
 }
 
 .text-container p {
