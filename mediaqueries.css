@@ -37,7 +37,7 @@
   section {
     margin: 0 5%;
   }
-  .section__pic-container {
+  .section-pic-container {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
@@ -50,7 +50,8 @@
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    margin-top: 65px;
+    margin-top:270px;
+    min-height: 100vh;
   }
   #profile {
     height: 60vh;
@@ -87,12 +88,12 @@
     gap: 0.5rem;
     text-align: center;
   }
-  .section__pic-container {
+  .section-pic-container {
     width: auto;
     height: 46vw;
     justify-content: center;
   }
-  .section__text__p2 {
+  .section-text-p2 {
     font-size: 1.25rem;
   }
   .title {

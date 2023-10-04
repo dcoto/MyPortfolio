@@ -15,8 +15,7 @@ body {
 	background-size: 1000% 1000%;
 	animation: gradient 15s ease infinite;*/
   background: rgb(15, 23, 42);
-	height: 100vh;
-  color: #fff;
+  color: #e6f1ff;
 }
 
 @keyframes gradient {
@@ -31,14 +30,61 @@ body {
 	}
 }
 
+/****************************** Animation loading page ******************************/
 
+
+
+.drop-in { /*normal*/
+  animation: drop-in 1s ease 200ms backwards;
+ }
+ 
+ .drop-in-2 { /*slower*/
+  animation: drop-in 1200ms ease 500ms backwards;
+ }
+ 
+ @keyframes drop-in {
+  0% {
+   opacity: 0;
+   transform: translateX(-100px);
+  }
+ 
+  50% {
+   opacity: 0.5;
+   
+  }
+ 
+ 
+  100% {
+   opacity: 1;
+   transform: translate(0px);
+  }
+ }
+
+/****************************** Animation loading page ******************************/
+
+/*header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #020a14;
+}*/
+
+#Nav-bars{
+  box-shadow: 0 10px 30px -20px #020a14;
+  
+}
+
+#desktop-nav{     
+  justify-content: space-between;
+  padding: 16px 100px 16px 100px ;
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 p {
-  color: #8892b0;
+  color: #e6f1ff;
 }
 
 /****************************** nav-header ******************************/
@@ -49,7 +95,9 @@ nav, .nav-links {
 nav {
   justify-content: space-around;
   align-items: center;
-  padding-top: 40px;
+  padding: 16px 0 16px 0 ;
+ 
+  
 }
 
 
@@ -64,13 +112,14 @@ nav ul li a {
   font-size: 15px;
   --b: 0.1em;   /* the thickness of the line */
   --c: #64ffda; /* the color */
-  color: #fff;
+  color: #e6f1ff;
   background: 
   linear-gradient(var(--c) 50%,#081b29 0) 0% calc(100% - var(--_p,0%))/100% 200%,
   linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
   -webkit-background-clip: text,padding-box;
   background-clip: text,padding-box;
   transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+
   
 }
 
@@ -80,6 +129,9 @@ nav ul li a:hover {
   color: #64ffda;
   
 }
+
+
+
 /****************************** nav-header ******************************/
 
 /****************************** Arrows to nav top-mid-bottom ******************************/
@@ -87,22 +139,29 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 40px;
   text-decoration: none;
   list-style: none;
-  height: 32vh;
-  padding-top: 90px;
   
 }
-.nav-arrows li a i{
-  color: #64ffda;
+.nav-arrows a i{
+  color: #e6f1ff;
   transition: .6s;
   
 }
 
-.nav-arrows li a i:hover{
-  transform: scale(1.3);
+.nav-arrows a i:hover{
+  transform: scale(1.1);
 }
+
+#nav-about{
+  height: 70vh;
+}
+
+#nav-contact{
+  padding-top: 170px;
+}
+
 /****************************** Arrows to nav top-mid-bottom ******************************/
 
 /****************************** logo d|c ******************************/
@@ -110,19 +169,27 @@ nav ul li a:hover {
   font-size: 2rem;
   color: #64ffda;
   /*color:#00abf0;*/
-  transition: .6s;
+  --c: #64ffda; /* the border color */
+  --b: 1px;    /* the border thickness*/
+  --g: 5px;     /* the gap on hover */
+  padding: calc(var(--g) + var(--b));
+  --_g: #0000 25%,var(--c) 0;
+  background: 
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+     var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+    conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+     0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+  transition: .3s, background-position .6s .3s;
   cursor: default;
 }
 
 .logo:hover {
-  transform: scale(1.3);
+  --_i: 100%;
+  transition: .3s, background-size .3s .3s;
 }
 /****************************** logo d|c ******************************/
 
 /****************************** HAMBURGER MENU ******************************/
-
-
-
 #hamburger-nav {
   display: none;
 }
@@ -144,7 +211,7 @@ nav ul li a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: #e6f1ff;
   transition: all 0.6s ease-in-out;
   
 }
@@ -170,7 +237,7 @@ nav ul li a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: #fff;
+  color: #e6f1ff;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
@@ -215,17 +282,20 @@ nav ul li a:hover {
 /****************************** HAMBURGER MENU ******************************/
 
 /****************************** Sections ******************************/
+
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 20rem;
+  margin: 0 14rem;
   box-sizing: border-box;
   min-height: fit-content;
   /*background-color: red;*/
+ 
 }
 
 .section-container {
   display: flex;
+  padding-top: 60px;
  /*background-color: green;*/
 }
 
@@ -247,42 +317,36 @@ section {
 
 
 /****************************** If i want to add a picture*****************************/
-.section__pic-container {
+.section-pic-container {
   display: flex;
-  
   transition: .6s;
 }
 
-.section__pic-container:hover{
-  box-shadow:
-  1px 1px #06152A,
-  2px 2px #06152A,
-  3px 3px #06152A,
-  4px 4px #06152A,
-  5px 5px #06152A,  
-  6px 6px #06152A;
-  -webkit-transform: translateX(-3px);
-  transform: translateX(-3px);
+.section-pic-container:hover{
+  
+  transform: translateX(-6px);
   transition: .5s ease;
   filter: contrast(120%);
 }
 
-.section__text {
+
+
+.section-text {
   align-self: center;
   text-align: center;
 }
 
-.section__text p {
+.section-text p {
   font-weight: 600;
   color: #8892b0;
 }
 
-.section__text__p1 {
+.section-text-p1 {
   text-align: center;
   
 }
 
-.section__text__p2 {
+.section-text-p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
@@ -292,6 +356,7 @@ section {
   text-align: center;
 }
 
+/* ICONS */
 #social-icons{
   margin-top: 30px;
 
@@ -301,26 +366,20 @@ section {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
-  color:#fff;
+  color:#e6f1ff;
   display: inline-block;
   transition: .3s;
   
 }
 
 .icons:hover{
-  color: #64ffda;
   transform: scale(1.3);
-}
 
+}
 /* ICONS */
 
-.icon {
-  cursor: pointer;
-  height: 2rem;
-}
 
 /* BUTTONS */
-
 .btn-container {
   display: flex;
   justify-content: center;
@@ -328,15 +387,18 @@ section {
 }
 
 .btn {
-  font-size: 20px;
-  background-color: #081b29;
+  font-size: 16px;
+  background-color: transparent;
   color: #64ffda;
-  border: 30px 30px 30px 30px;
   border-color: #64ffda;
-  padding: 1rem 1.5rem;
-  border-radius: 5px;
+  padding: 0.8rem;
+  border-radius: 8px;
   cursor: pointer;
-  transition:0.5s;
+  transition:1s;
+  min-width: 140px;
+  text-decoration: none;
+  border: 1px solid;
+  line-height: 1;
   
 }
 
@@ -345,14 +407,15 @@ section {
   background: #64ffda;
   color: #081b29;
   
-  }
-
-.btn-container {
-  gap: 1rem;
 }
 
-/* ABOUT SECTION */
+#btn-contact{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 
+}
+/* ABOUT SECTION */
 #about {
   position: relative;
   /*background-color: purple;*/
@@ -372,7 +435,7 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
-  color: #fff;
+  color: #e6f1ff;
 }
 
 .about-containers,
@@ -389,12 +452,7 @@ section {
 }
 
 
-.arrow {
-  font-size: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 /*cards*/
 .details-container {
@@ -403,31 +461,27 @@ section {
   background: #0a192f;
   border-radius: 1rem;
   transition: .3s;
-  opacity: 0.9;
+
   text-align: center;
   
 }
 
 .section-container {
   gap: 4rem;
-  height: 80%;
+  
 }
 
-.section__pic-container {
+.section-pic-container {
   height: 400px;
   width: 400px;
-  margin: auto 0;
 }
 /*project card*/
 .details-container:hover{
-  opacity: initial;
-  filter: contrast(90%);
-  cursor: pointer;
-  color: #64ffda;
+  filter: contrast(120%);
 }
 
 .text-container p {
-  color: #fff;
+  color: #e6f1ff;
   opacity: 0.7;
 }
 
@@ -457,6 +511,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding-top: 60px;
 }
 
 .article-container {
@@ -474,10 +529,6 @@ article {
   justify-content: space-around;
   gap: 0.5rem;
   color: #8892b0;
-}
-
-article .icon {
-  cursor: default;
 }
 
 /* PROJECTS SECTION */
@@ -504,73 +555,65 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: #fff;
+  color: #e6f1ff;
 }
 
 
 /* CONTACT */
 
 #contact {
+  margin-top: 180px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  height: 70vh;
-  padding-top: 180px;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 #contact .title{
   color: #8892b0;
 }
 
-.section__text__p1{
+.section-text-p1{
   color: #64ffda;
   opacity: 0.7;
 }
 
 .contact-info-upper-container {
+
   display: flex;
   justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
+  align-items: center;
+  margin: 8rem auto;
+  gap: 1rem;
 }
 
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
-}
+/*.contact-info-container {
+ 
+}*/
 
 .contact-info-container p {
-  font-size: larger;
-  color: #64ffda; /*verde agua*/
+  font-size: 25px;
+  color: #fff; /*verde agua*/
 }
 
 
 .contact-icon{
   font-size: 30px;
   margin-right: 15px;
-  color:#fff;
+  color:#e6f1ff;
   display: inline-block;
   cursor: default;
 
 }
 
-#contact, .section__text__p1 title{
+#contact, .section-text-p1 title{
   text-align: center;
 }
 
 /* FOOTER SECTION */
 
-footer {
-  height: 26vh;
-  margin: 0 1rem;
-}
+
 
 .rocket-text{
   display: flex;
@@ -580,63 +623,7 @@ footer {
 
 
 
-.card {
-  width: 190px;
-  height: 254px;
-  background: #64ffda;
-  transition: all 0.4s;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 5px  #64ffda;
-  font-size: 30px;
-  font-weight: 900;
-  opacity: 0.7;
-}
 
-.card:hover {
-  border-radius: 15px;
-  cursor: pointer;
-  transform: scale(1.2);
-  box-shadow: 0px 0px 10px 5px  #8892b0;
-  background: #8892b0;
-  opacity: initial;
-  filter: contrast(120%);
-}
-
-.first-content {
-  height: 100%;
-  width: 100%;
-  transition: all 0.4s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
-  border-radius: 15px;
-}
-
-.card:hover .first-content {
-  height: 0px;
-  opacity: 0;
-}
-
-.second-content {
-  height: 0%;
-  width: 100%;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  transition: all 0.4s;
-  font-size: 0px;
-  transform: rotate(90deg) scale(-1);
-}
-
-.card:hover .second-content {
-  opacity: 1;
-  height: 100%;
-  font-size: 1.8rem;
-  transform: rotate(0deg);
-}
 
 
 .reveal{
@@ -651,3 +638,10 @@ footer {
   opacity: 1;
 }
 
+header{
+  transition: 1s;
+}
+
+.head-scrolled {
+
+}

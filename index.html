@@ -11,6 +11,9 @@
   </head>
   <body>
 
+    <main class="overflow-hidden">
+
+  <header id="Nav-bars" class="drop-in"> 
     <nav id="desktop-nav">
       <div class="logo">d|c</div>
       <div>
@@ -22,7 +25,8 @@
         </ul>
       </div>
     </nav>
-
+  
+    <!-- Menu on phone -->
     <nav id="hamburger-nav">
       <div class="logo">d|c</div>
       <div class="hamburger-menu">
@@ -35,80 +39,69 @@
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          
         </div>
       </div>
     </nav>
+  </header>
 
+    <!--Profile-->
+  <div class="drop-in-2"> 
     <section id="profile">
-       <div class="section__text">
-        <p class="section__text__p1"></p>
+       <div class="section-text">
+        <p class="section-text-p1"></p>
         <h1 class="title"><span>David </span>Coto</h1>
-        <p class="section__text__p2">System Engineer Student</p>
+        <p class="section-text-p2">System Engineer Student</p>
         <div class="btn-container">
-          <button
-            class="btn"
-            onclick="window.open('./assets/David Coto Hernández CV.pdf')">
-            Resume 
-          </button>
-          <button class="btn" onclick="location.href='#contact'">
-            Contact Info
-          </button>
+          <button class="btn" onclick="window.open('./assets/David Coto Hernández CV.pdf')">Resume</button>
+          <button class="btn" onclick="location.href='#contact'">Contact Info</button>
         </div>
-        <div id="social-icons">
+        <ul id="social-icons">
           <a class="icons" target="_blank" href="https://www.linkedin.com/in/david-coto-hern%C3%A1ndez-3558bb249/"><i class="fab fa-linkedin"></i></a>
           <a class="icons" target="_blank" href="https://github.com/dcoto"><i class="fab fa-github"></i></a>
-        </div>
+        </ul>
 
       </div>
       
-      <nav id="nav-about" class="nav-arrows">
-        
-            <li><a href="#about"><i class="fa-solid fa-angles-down"></i></a></li>
-          
-      </nav>
+      <div id="nav-about" class="nav-arrows">
+            <a href="#about"><i class="fa-solid fa-angles-down"></i></a>  
+      </div>
          
     </section>
-   
+  </div>
+
+   </main>
+
+   <!--About-->
 
     <section id="about" class="reveal">
-      <p class="section__text__p1">Few things</p>
+      <p class="section-text-p1">Few things</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img src="https://i.pinimg.com/originals/e4/26/70/e426702edf874b181aced1e2fa5c6cde.gif" alt="" />
+        <div class="section-pic-container">
+          <img id="img-coding" src="assets/coding.gif" alt="" />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            
             <div class="details-container">
               <i class="fa-solid fa-user-graduate"></i>
-              <h3>I’m currently studying</h3>
+              <h3>I'm currently studying</h3>
               <p class="about-text">
                 to become an <span>IT administrador</span> on M365 services and my last courses to finish my<span> Systems Engineering</span> major. <br>Love writing <span>code</span> but more the <span>data</span>, interested on <span>Data-Analysis</span> <br> such as advanced <span>Excel</span>, 
                 <span>Tableau </span>and <span>SQL</span>.
               </p>
             </div>
           </div>
-          
         </div>
         
-
       </div>
-
-     
-           
     </section>
     
-   
-
-
+    <!--Projects-->
     <section id="projects" class="reveal">
-      <p class="section__text__p1">Soon ....</p>
+      <p class="section-text-p1">Soon ....</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -140,54 +133,50 @@
             <h2 class="experience-sub-title project-title">Data-Analyst<br> Dashboard</h2>
             <div class="btn-container">
             
-              <button
-                class="btn"
-                onclick="window.open('https://1drv.ms/x/s!AjcKlBryo_0GgWMFiTh-TO-xAx3l?e=K7g5xY')"
+              <a
+                class="btn" href="https://1drv.ms/x/s!AjcKlBryo_0GgWMFiTh-TO-xAx3l?e=K7g5xY"
               >
                  Demo
-              </button>
+            </a>
             </div>
           </div>
 
         </div>
       </div>
-       <!– arrow to move if i want to add it later –>
-    
-
+       
     </section>
 
-    <section id="contact" class="reveal">
-      <p class="section__text__p1">Now what?</p>
+    <!--Contact-->
+    <section id="contact">
+      <div class="reveal"> 
+      <p class="section-text-p1">Now what?</p>
       <h1 class="title">Get in Touch</h1>
+      
+       
+     
+        <div id="btn-contact">
+          <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=dcotoh.14@gmail.com&su=Contact" class="btn">Email</a>
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=50660140660" class="btn">Whatsapp</a>
+        </div>
+        
+      
+
+    </div>
+      <div id="nav-contact" class="nav-arrows">    
+        <a href="#"><i class="fa-brands fa-space-awesome"></i></a>
+      </div>
+
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <h1 href="" class="contact-icon"><i class="fa-solid fa-envelope"></i></h1>
           <p>dcotoh.14@gmail.com</p>
         </div>
         <div class="contact-info-container">
-          <h1 class="contact-icon" href=""><i class="fa-solid fa-mobile-screen-button"></i></h1>
           <p>+506 60140660</p>
         </div>
         
-      </div>  
-      <div id="btn-contact">
-        <button class="btn" onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=dcotoh.14@gmail.com&su=Contact')">Send me an email</button>
-        
-      </div>
-
-      
+      </div> 
     </section>
 
-    
-    <footer>
-      <nav class="nav-arrows">    
-        <li><a href="#"><i class="fa-brands fa-space-awesome"></i></a></li>
-      </nav>
-     
-      
-      
-      
-    </footer>
     <script defer src="script.js"></script>
   </body>
 </html>
