@@ -58,14 +58,26 @@
   article {
     font-size: 1rem;
   }
- 
+
+  .contact-info-container{
+    gap:50px;
+    line-height: 40px;
+  }
+  
   .about-containers,
-  .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
   }
-  .contact-info-container {
-    margin: 0;
+  .contact-info i{
+   font-size: 30px;
+  }
+
+  .contact-info h1{
+   font-size: 20px;
+  }
+
+  .contact-info span{
+   font-size: 14px;
   }
   /*.contact-info-container p,
   .nav-links li a {
