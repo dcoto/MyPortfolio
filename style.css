@@ -333,7 +333,7 @@ section {
 }
 
 .section-pic-container:hover{
-  transform: translateX(-45px);
+ /* transform: translateX(-45px);*/
   filter: contrast(120%);
 }
 
@@ -481,7 +481,7 @@ aside ul li a i:hover{
   border-radius: 2rem;
   transition: .3s;
   text-align: center;
-  
+  z-index: 1;
 }
 
 .section-container {
@@ -627,6 +627,7 @@ article {
 .contact-info span {
   font-size: 18px;
   color: #e6f1ff;
+  text-decoration: none;
 }
 
 .contact-info i{
