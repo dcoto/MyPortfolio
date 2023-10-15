@@ -50,6 +50,7 @@
 @media screen and (max-width: 600px) {
   #contact{
     min-height: 100vh;
+    margin-top: 130px; 
   }
   #profile {
     height: 60vh;
@@ -126,5 +127,10 @@
     height: 50vh;
 
   }
-  
+
+ .section-text-p2{
+  font-size: 1.2rem;
+  }
+
+
 }

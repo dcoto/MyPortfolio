@@ -15,7 +15,7 @@ body {
 	background-size: 1000% 1000%;
 	animation: gradient 15s ease infinite;*/
   background: rgb(15, 23, 42);
-  color: #e6f1ff;
+  color: #ccd6f6;
 
 }
 
@@ -83,7 +83,7 @@ html {
 }
 
 p {
-  color: #e6f1ff;
+  color: #ccd6f6;
 }
 
 /****************************** nav-header ******************************/
@@ -111,7 +111,7 @@ nav ul li a {
   font-size: 15px;
   --b: 0.1em;   /* the thickness of the line */
   --c: #64ffda; /* the color */
-  color: #e6f1ff;
+  color: #ccd6f6;
   background: 
   linear-gradient(var(--c) 50%,#081b29 0) 0% calc(100% - var(--_p,0%))/100% 200%,
   linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
@@ -144,7 +144,7 @@ nav ul li a:hover {
   
 }
 .nav-arrows a i{
-  color: #e6f1ff;
+  color: #ccd6f6;
   transition: .6s;
   
 }
@@ -219,7 +219,7 @@ nav ul li a:hover {
 .hamburger-icon span {
   width: 110%;
   height: 2px;
-  background-color: #e6f1ff;
+  background-color: #ccd6f6;
   transition: all 0.6s ease-in-out;
   
 }
@@ -246,7 +246,7 @@ nav ul li a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: #e6f1ff;
+  color: #ccd6f6;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
@@ -356,9 +356,11 @@ section {
   
 }
 
+
 .section-text-p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+  color: #8892b0;
 }
 
 .title {
@@ -377,7 +379,7 @@ section {
   font-size: 30px;
   margin-right: 10px;
   margin-left: 10px;
-  color:#e6f1ff;
+  color:#ccd6f6;
 }
 
 .icons:hover{
@@ -441,7 +443,7 @@ aside ul li a i:hover{
 
 }
 #about .title{
-  color: #8892b0;
+  color: #ccd6f6;
 }
 
 .about-containers {
@@ -454,7 +456,7 @@ aside ul li a i:hover{
 .about-details-container {
   justify-content: center;
   flex-direction: column;
-  color: #e6f1ff;
+  color: #ccd6f6;
 }
 
 .about-containers,
@@ -504,7 +506,7 @@ footer{
 }
 
 .text-container p {
-  color: #e6f1ff;
+  color: #ccd6f6;
   opacity: 0.7;
 }
 
@@ -520,13 +522,12 @@ footer{
 }
 
 #experience .title{
-  color: #8892b0;
+  color: #ccd6f6;
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   margin-bottom: 2rem;
 }
 
@@ -563,7 +564,7 @@ article {
 }
 
 #projects .title{
-  color: #8892b0;
+  color: #ccd6f6;
 }
 .color-container {
   border-color: #64ffda;
@@ -579,14 +580,14 @@ article {
 
 .project-title {
   margin: 1rem;
-  color: #e6f1ff;
+  color: #ccd6f6;
 }
 
 
 /* CONTACT */
 
 #contact {
-  margin-top: 130px;  /*cambio*/
+   /*cambio*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -596,7 +597,7 @@ article {
 }
 
 #contact .title{
-  color: #8892b0;
+  color: #ccd6f6;
 }
 
 .section-text-p1{
@@ -626,7 +627,7 @@ article {
 
 .contact-info span {
   font-size: 18px;
-  color: #e6f1ff;
+  color: #ccd6f6;
   text-decoration: none;
 }
 
@@ -643,9 +644,8 @@ article {
 
 
 .contact-icon{
- 
   margin-right: 15px;
-  color:#e6f1ff;
+  color:#ccd6f6;
   cursor: default;
   gap: 1;
 
@@ -653,6 +653,13 @@ article {
 
 #contact, .section-text-p1 title{
   text-align: center;
+}
+
+#contact .section-text-p2{
+  font-size: 1rem;
+  max-width: 600px;
+  color: #ccd6f6;
+  margin-top: 1rem;
 }
 
 /* FOOTER SECTION */
@@ -792,7 +799,7 @@ aside a{
 
 
 .line {
-  border-left: 6px solid #e6f1ff;
+  border-left: 6px solid #ccd6f6;
   height: 450px;
   
 }
